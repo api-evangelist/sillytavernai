@@ -1,0 +1,11 @@
+generated: '2026-10-19'
+method: searched
+source: https://registry.npmjs.org/sillytavern
+packages:
+  - name: sillytavern
+    registry: npm
+    url: https://www.npmjs.com/package/sillytavern
+    language: javascript
+    official: true
+    version: 1.19.0
+    published: 2023-05-10

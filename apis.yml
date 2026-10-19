@@ -1,29 +1,86 @@
 aid: sillytavernai
+
 name: SillyTavern AI
-description: 'SillyTavern AI provides an open-source, extensible AI chat interface that allows users to create and customize AI characters for role‑playing, storytelling, and interactive experiences. It supports multiple AI back‑ends, plug‑in extensions, and a rich UI for managing character lore, dialogue, and visual assets. The platform is community‑driven, with frequent updates and a growing ecosystem of tools and integrations, enabling creators to build immersive conversational worlds.'
+
+image: https://docs.sillytavern.app/static/banner.png
+
+description: SillyTavern AI provides an open-source, extensible AI chat interface that allows users to create and customize AI characters for
+  role‑playing, storytelling, and interactive experiences. It supports multiple AI back‑ends, plug‑in extensions, and a rich UI for managing character
+  lore, dialogue, and visual assets. The platform is community‑driven, with frequent updates and a growing ecosystem of tools and integrations,
+  enabling creators to build immersive conversational worlds.
+
 url: https://raw.githubusercontent.com/api-evangelist/sillytavernai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-19 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-18'
+
 modified: '2026-10-18'
+
 tags:
 - AI
 - Chatbot
 - OpenSource
 - RolePlaying
 - Community
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: ChangeLog
+  url: changelog/sillytavernai-changelog.yml
+- type: LLMsTxt
+  url: llms/sillytavernai-llms.txt
+- type: Hosts
+  url: hosts/sillytavernai-hosts.yml
+- type: Vendors
+  url: vendors/sillytavernai-vendors.yml
+- type: SDKs
+  url: packages/sillytavernai-packages.yml
+- type: Packages
+  url: packages/sillytavernai-packages.yml
 - type: DomainSecurity
   url: security/sillytavernai-domain-security.yml
 - type: GitHubOrganization
   url: https://github.com/SillyTavern
+- type: Documentation
+  url: https://docs.sillytavern.app
+- type: DeveloperPortal
+  url: https://docs.sillytavern.app
+- type: Support
+  url: https://discord.gg/sillytavern
+- type: Website
+  url: https://docs.sillytavern.app
 
+apis:
+- name: SillyTavern API
+  description: SillyTavern provides API connections to various LLM back‑ends, documented in the API Connections guide.
+  humanURL: https://docs.sillytavern.app/usage/api_connections/index.md
+  baseURL: null
+  aid: sillytavernai:sillytavern-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation is rendered via JavaScript and provides no machine‑readable OpenAPI spec.
+  evidence:
+  - url: https://docs.sillytavern.app
+    status: 200
+  checked: '2026-10-19'
+x-enrichment:
+  date: '2026-10-19'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

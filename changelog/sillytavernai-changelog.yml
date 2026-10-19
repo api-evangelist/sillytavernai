@@ -1,0 +1,23 @@
+generated: '2026-10-19'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.sillytavern.app/installation/updating/st-1.12.0-migration-guide.md
+sources:
+- https://docs.sillytavern.app/installation/updating/st-1.12.0-migration-guide.md
+- https://docs.sillytavern.app/installation/updating/migration-guide-1-09.md
+entries:
+- breaking: true
+  highlights:
+  - SillyTavern 1.12.0 (codename the "Neo Server" update) includes several critical changes that may affect the way you use SillyTavern.
+  - All persistent information from `/public` such as settings and chats ... was moved into a separate directory with the configurable path, making
+    it portable and independent from the web server itself.
+  - Soft links between the `/public` directory and the `config` volume are no longer needed and are not built into the Docker container!
+- breaking: false
+  highlights:
+  - It is recommended to do a fresh install.
+  - Before doing anything, make a complete backup of your installation. You may lose your data in the process, so don't ignore this warning.
+  - If you cloned just a single branch from an old remote (before migration to the organization repo), you need to add and fetch a branch from
+    a new remote.
+current_version: 1.12.0
+note: The pages provide migration guides for versions 1.12.0 and 1.9.0 but do not list explicit dates or a full versioning scheme.
+docs: https://docs.sillytavern.app/installation/updating/st-1.12.0-migration-guide.md

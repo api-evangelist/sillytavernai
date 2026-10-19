@@ -1,0 +1,59 @@
+generated: '2026-10-19'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 0
+  platform: 2
+  roles:
+  - api
+  - source
+  - support
+  - website
+hosts:
+- host: api.sillytavern.app
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: sillytavern.app
+  role: api
+  relation: own
+- host: discord.gg
+  found_by:
+  - pointer
+  types:
+  - Support
+  serves: []
+  registrable_domain: discord.gg
+  role: support
+  relation: platform
+- host: docs.sillytavern.app
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Documentation
+  - DeveloperPortal
+  - Website
+  serves:
+  - docs
+  registrable_domain: sillytavern.app
+  role: website
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  - Blog
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
