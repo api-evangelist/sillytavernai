@@ -1,7 +1,6 @@
 aid: sillytavernai
 name: SillyTavern AI
-description: 'SillyTavern AI is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'SillyTavern AI provides an open-source, extensible AI chat interface that allows users to create and customize AI characters for role‑playing, storytelling, and interactive experiences. It supports multiple AI back‑ends, plug‑in extensions, and a rich UI for managing character lore, dialogue, and visual assets. The platform is community‑driven, with frequent updates and a growing ecosystem of tools and integrations, enabling creators to build immersive conversational worlds.'
 url: https://raw.githubusercontent.com/api-evangelist/sillytavernai/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:g2-catalog
@@ -11,7 +10,11 @@ specificationVersion: '0.20'
 created: '2026-10-18'
 modified: '2026-10-18'
 tags:
-- Company
+- AI
+- Chatbot
+- OpenSource
+- RolePlaying
+- Community
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +22,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
-  url: https://sillytavernai.com/
+- type: DomainSecurity
+  url: security/sillytavernai-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/SillyTavern
+
