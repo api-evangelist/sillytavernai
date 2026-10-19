@@ -24,9 +24,12 @@ hosts:
 - host: discord.gg
   found_by:
   - pointer
+  - vendor-detect
   types:
   - Support
-  serves: []
+  serves:
+  - community
+  vendor: discord
   registrable_domain: discord.gg
   role: support
   relation: platform
@@ -38,12 +41,16 @@ hosts:
   - docs-index
   - contract-discovery
   - well-known
+  - vendor-detect
   types:
   - Documentation
   - DeveloperPortal
   - Website
   serves:
   - docs
+  - cdn
+  - hosting
+  vendor: fastly
   registrable_domain: sillytavern.app
   role: website
   relation: own
@@ -52,7 +59,6 @@ hosts:
   - pointer
   types:
   - GitHubOrganization
-  - Blog
   serves: []
   registrable_domain: github.com
   role: source
